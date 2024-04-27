@@ -33,7 +33,7 @@ longitude = "-84.149144"
 #--- your location (just for display purpose)
 myLocation = 'Duluth, GA'
 #
-#--- your API-key from DarkSky (https://darksky.net/dev)
+#--- your API-key from DarkSky (https://pirate-weather.apiable.io/)
 apiKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 #
 #--- select the language (possible "de" for German or "en" for English)
@@ -48,7 +48,7 @@ units = 'ca' # Celsius and km
 #=== DO NOT EDIT AFTER THIS LINE unless you know what you're doing! ===
 #======================================================================
 
-command: "curl -s 'https://api.darksky.net/forecast/#{apiKey}/#{latitude},#{longitude}?lang=#{lang}&units=#{units}&exclude=minutely,hourly'"
+command: "curl -s 'https://api.pirateweather.net/forecast/#{apiKey}/#{latitude},#{longitude}?lang=#{lang}&units=#{units}&exclude=minutely,hourly'"
 
 refreshFrequency: '15m' # every 15 minutes
 
